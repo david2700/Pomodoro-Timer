@@ -1,0 +1,272 @@
+.taskListHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 2px solid rgb(249, 248, 248, 0.7);
+}
+
+.taskNumber {
+    color: rgb(249, 248, 248, 0.7);
+}
+
+.taskNumber:hover {
+    color: rgb(249, 248, 248);
+    cursor: pointer;
+}
+
+.taskListContainer {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.addTaskButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed rgb(249, 248, 248, 0.6);
+    border-radius: 10px;
+    height: 64px;
+    width: 100%;
+    color: rgb(249, 248, 248, 0.7);
+    font-weight: 700;
+    transition: all 0.05s ease-in;
+}
+
+.addTaskButton:hover {
+    color: rgba(249, 248, 248);
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #fff;
+    transition: color 0.3s ease;
+    padding: 0.3rem 0.5rem;
+}
+
+.taskForm {
+    background-color: white;
+    border-radius: 8px;
+    padding: 24px 24px 0 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.taskInput {
+    width: 100%;
+    padding: 8px 0;
+    font-size: 1.2rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    color: #333;
+    margin-bottom: 24px;
+}
+
+.taskInput::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+    font-style: italic;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.pomodoroEstimate {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 24px;
+    color: #555;
+    font-size: 1rem;
+}
+
+.pomodoroEstimate span {
+    font-weight: 700;
+}
+
+.pomodoroControls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.pomodoroInput {
+    width: 80px;
+    padding: 8px 12px;
+    background: #f5f5f5;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    color: #333;
+    text-align: center;
+    font-size: 1rem;
+    /* Hide default arrows */
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+/* Hide default arrows in Chrome, Safari, Edge, Opera */
+.pomodoroInput::-webkit-outer-spin-button,
+.pomodoroInput::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.pomodoroButtons {
+    display: flex;
+    gap: 2px;
+}
+
+.pomodoroButtons button {
+    width: 28px;
+    height: 28px;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    color: #666;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.pomodoroButtons button:hover {
+    background: #f9f9f9;
+}
+
+.taskFormActions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.additionalActions {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.actionButton {
+    background: transparent;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    padding: 4px;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.formButtonsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    margin: 0 -24px;
+    padding: 16px 24px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    gap: 16px;
+}
+
+.flexEnd {
+    justify-content: flex-end;
+}
+
+.cancelButton {
+    background: transparent;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 12px 24px;
+}
+
+.deleteButton {
+    background: transparent;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.saveButton {
+    background: #333;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    padding: 12px 24px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.taskItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    background-color: white;
+    border-radius: 4px;
+    position: relative;
+}
+
+.taskCheckbox {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #DFDFDF;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.taskCheckbox.checked {
+    background-color: rgb(186, 73, 73);
+    border-color: rgb(186, 73, 73);
+}
+
+.taskCheckbox.checked::after {
+    content: "✓";
+    color: white;
+    font-size: 12px;
+}
+
+.taskTitle {
+    flex-grow: 1;
+    color: #444444;
+    font-weight: 500;
+}
+
+.taskCount {
+    color: #999999;
+    margin-right: 8px;
+}
+
+.taskMenuButton {
+    background: transparent;
+    border: none;
+    color: #999999;
+    cursor: pointer;
+    padding: 4px 8px;
+    font-size: 16px;
+}
+
+.taskMenuButton:hover {
+    color: #666666;
+}
+
+

@@ -1,0 +1,10 @@
+.container {
+    text-align: center;
+    padding: 0;
+    border-radius: 8px;
+    min-height: 100vh;
+    max-width: 664px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  

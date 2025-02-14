@@ -1,0 +1,42 @@
+:root {
+  font-family: "Nunito", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: white; ;
+  background-color: rgb(186, 73, 73);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  transition: background-color 0.7s ease;
+}
+
+.bg-pomodoro {
+  background-color: rgb(186, 73, 73);
+}
+
+.bg-short-break {
+  background-color: rgb(73, 186, 110);
+}
+
+.bg-long-break {
+  background-color: rgb(73, 110, 186);
+}
+
+
+
